@@ -1,6 +1,8 @@
 "use client"
-import { useReducer } from "react"
+import { Suspense, useReducer } from "react"
 import FilterForm from "./filterform"
+import CarList from "./carList"
+import FilterList from "./filterList"
 
 export interface FilterState {
     model: string,
@@ -34,7 +36,10 @@ export default () => {
             <div className="basis-1/4 flex justify-center"> 
                 <FilterForm formState={formState} dispatch={dispatch} />
             </div>
-            <div className="basis-3/4"> Car listings </div>
+            <div className="basis-3/4"> 
+            <FilterList filters={formState}/>
+            <CarList filters={formState}/>
+            </div>
         </div>
     )
 }

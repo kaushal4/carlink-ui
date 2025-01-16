@@ -1,0 +1,22 @@
+[
+    {
+        "plate": "JKL3456",
+        "model": "honda",
+        "condition": "good"
+    },
+    {
+        "plate": "MNO7890",
+        "model": "toyota",
+        "condition": "great"
+    },
+    {
+        "plate": "PQR1234",
+        "model": "ford",
+        "condition": "bad"
+    },
+    {
+        "plate": "STU5678",
+        "model": "chevy",
+        "condition": "good"
+    }
+]

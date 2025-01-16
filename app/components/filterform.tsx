@@ -10,7 +10,7 @@ interface filterFormProps {
 }
 
 const demoModels = ["honda", "toyota", "ford", "chevy"];
-const demoContitions = ["new", "used", "certified"];
+const demoContitions = ["good", "great", "bad"];
 
 export default function FilterForm({formState, dispatch}:filterFormProps) {
     const [state, submitAction] = useActionState(
